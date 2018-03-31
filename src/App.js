@@ -37,6 +37,7 @@ class App extends Component {
             this.setState({currentLevel: this.state.unlockLevel});
         }
 
+
     }
     render(){
         const bg = this.state.currentLevel===0?
@@ -47,10 +48,11 @@ class App extends Component {
         return(
             <div style={bg} className="game">
                 {this.state.currentLevel!==0?(<div><button className="menuButton button" onClick={this.goToMenu.bind(this)}>Menu</button><br/></div>):(<br/>)}
-                <button className="nextButton button" onClick={this.continue.bind(this)}>{this.state.currentLevel< this.state.maxLevel? "Suivant":"Chapitre 2"}</button>
+                <button className="nextButton button" onClick={
+                    this.continue.bind(this)}>{this.state.currentLevel< this.state.maxLevel? "Suivant":"Chapitre 2"}</button>
 
                 {this.state.currentLevel===0?(
-                   <Menu unlockChapter={this.state.unlockChapter}/>
+                   <Menu unlockChapter={this.state.unlockChapter} />
                 ):(
                     <Level currentLevel={this.state.currentLevel}/>
 
