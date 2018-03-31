@@ -4,9 +4,9 @@ export class Menu extends Component{
     render(){
         const chapterName = [
         "Où est ma fille ?",
-            "Les Noces funèbres",
-            "Les Noces funèbres",
-            "Issou la chankla"
+            "Nom de chapitre",
+            "Nom de chapitre",
+            "Nom de chapitre"
         ];
         const style ={
             color:"red",

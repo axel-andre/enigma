@@ -12,7 +12,14 @@ render(){
     return(
 
         <div className="Chapitre">
-            <h2>Niveau {this.props.currentLevel}</h2>
+            {this.props.currentLevel%2===0?(
+                <h2 className="levelText">Niveau {this.props.currentLevel}</h2>
+
+
+            ):(
+                <h2 className="levelTextNext">Niveau {this.props.currentLevel}</h2>
+
+            )}
             {subtitle[this.props.currentLevel]!=null?(
 
                 <p>{subtitle[this.props.currentLevel]}</p>
