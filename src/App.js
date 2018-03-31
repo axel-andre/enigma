@@ -54,7 +54,7 @@ class App extends Component {
                 {this.state.currentLevel===0?(
                    <Menu unlockChapter={this.state.unlockChapter} />
                 ):(
-                    <Level currentLevel={this.state.currentLevel}/>
+                    <Level unlockLevel={this.state.unlockLevel} currentLevel={this.state.currentLevel}/>
 
                 )}
 

@@ -22,7 +22,6 @@ render(){
 
         <div className="Chapitre">
             {/*{this.state.isAnimated!==true?"TRUE":"FA/SE"}*/}
-
             {this.props.currentLevel%2===0?(
                 <h2 className="levelText" onAnimationStart={this.changeAnimation.bind(this)}>Niveau {this.props.currentLevel}</h2>
 

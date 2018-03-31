@@ -49,7 +49,7 @@
     display: inline-block;
 background-color: rgba(0,0,0,0.52);
 color: white;
-    animation: Apear  1s linear forwards;
+    animation: Apear  3s linear forwards;
 }
 .levelTextNext{
     opacity: 1;
@@ -60,9 +60,12 @@ color: white;
     display: inline-block;
     background-color: rgba(0,0,0,0.52);
     color: white;
-    animation: Apear 1s linear forwards;
+    animation: Apear2 3s linear forwards;
 }
 @keyframes Apear {
+    from{opacity: 100%;}
+    to{opacity: 0;}
+}@keyframes Apear2 {
     from{opacity: 100%;}
     to{opacity: 0;}
 }
