@@ -3,7 +3,7 @@ export class Menu extends Component{
 
     render(){
         const chapterName = [
-        "Où est ma fille ?",
+        "Où est mon fils ?",
             "Nom de chapitre",
             "Nom de chapitre",
             "Nom de chapitre"
