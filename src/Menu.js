@@ -9,7 +9,7 @@ export class Menu extends Component{
             "Nom de chapitre"
         ];
         const style ={
-            color:"red",
+            color:"blue",
         };
         const chapterList= chapterName
             .map((e,a)=><li style={a+1<=this.props.unlockChapter?style:null}>Chapitre {a+1} : {e}</li>);
