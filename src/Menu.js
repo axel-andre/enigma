@@ -3,13 +3,13 @@ export class Menu extends Component{
 
     render(){
         const chapterName = [
-        "Où est ma fille ?",
+        "Où est mon fils ?",
             "Nom de chapitre",
             "Nom de chapitre",
             "Nom de chapitre"
         ];
         const style ={
-            color:"red",
+            color:"blue",
         };
         const chapterList= chapterName
             .map((e,a)=><li style={a+1<=this.props.unlockChapter?style:null}>Chapitre {a+1} : {e}</li>);
